@@ -27,3 +27,11 @@ spec:
         env:
         - name: FLASK_ENV
           value: development
+        - name: DB_HOST
+          value: "mysql-service"
+        - name: DB_USER
+          value: "root"
+        - name: DB_PASSWORD
+          value: "rootpassword"
+        - name: DB_NAME
+          value: "counter_db"

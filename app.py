@@ -4,10 +4,11 @@ import mysql.connector
 
 app = Flask(__name__)
 
+# Ensure these environment variables are correctly set in your app-deployment.yaml
 db_connection = mysql.connector.connect(
     host=os.getenv("DB_HOST", "mysql-service"),
     user=os.getenv("DB_USER", "root"),
-    password=os.getenv("DB_PASSWORD", "rootpassword"), 
+    password=os.getenv("DB_PASSWORD", "rootpassword"),
     database=os.getenv("DB_NAME", "counter_db")
 )
 
