@@ -1,7 +1,6 @@
 from flask import Flask, request, render_template_string
 import os
-import mysql.connector
-
+import mysql
 app = Flask(__name__)
 server_counter = 1
 current_message = "Waiting for a message..."
