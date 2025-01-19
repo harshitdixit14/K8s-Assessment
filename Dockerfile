@@ -9,6 +9,7 @@ COPY app.py /app/
 
 # Install required Python packages
 RUN pip install flask
+RUN pip install flask mysql-connector-python
 
 # Expose the application's port
 EXPOSE 5000
