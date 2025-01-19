@@ -7,8 +7,8 @@ app = Flask(__name__)
 db_connection = mysql.connector.connect(
     host=os.getenv("DB_HOST", "mysql-service"),
     user=os.getenv("DB_USER", "root"),
-    password=os.getenv("DB_PASSWORD", "password"),
-    database=os.getenv("DB_NAME", "flask_db")
+    password=os.getenv("DB_PASSWORD", "rootpassword"), 
+    database=os.getenv("DB_NAME", "counter_db")
 )
 
 server_counter = 1
