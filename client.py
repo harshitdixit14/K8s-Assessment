@@ -1,7 +1,7 @@
 import requests
 import time
 
-server_url = "http://127.0.0.1:63778/"
+server_url = "http://127.0.0.1:51072/"
 
 counter = 1
 
