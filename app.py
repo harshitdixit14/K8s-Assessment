@@ -4,7 +4,6 @@ import mysql.connector
 
 app = Flask(__name__)
 
-# Ensure these environment variables are correctly set in your app-deployment.yaml
 db_connection = mysql.connector.connect(
     host=os.getenv("DB_HOST", "mysql-service"),
     user=os.getenv("DB_USER", "root"),
@@ -48,7 +47,6 @@ def handle_message():
         current_message = payload["message"]
         counter_value = payload["counter"]
 
-        # Save to the database
         try:
             cursor = db_connection.cursor()
             query = "INSERT INTO counter_messages (counter, message) VALUES (%s, %s)"
