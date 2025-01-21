@@ -2,7 +2,13 @@
 
 Problem Statement -
 
-Consider 2 replicas of a server among which the client request is distributed in round robin manner with time quantum taken as 1 second. The client is repeatedly sending request to replicas. If some how the connection is dead the back up of the requests are maintained in the server. Once the connection is regained the request should start from the previous request served before the connection termination.
+Consider 2 replicas of a server among which the client request is 
+distributed in round robin manner with time quantum taken as 1 
+second. The client is repeatedly sending request to replicas. If
+ some how the connection is dead the back up of the requests are 
+ maintained in the server. Once the connection is regained the 
+ request should start from the previous request served before the 
+ connection termination.
 
 Solution -
 
