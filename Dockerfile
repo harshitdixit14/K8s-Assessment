@@ -8,8 +8,6 @@ WORKDIR /app
 COPY app.py /app/
 
 # Install required Python packages
-RUN pip install --upgrade pip
-
 RUN pip install flask
 RUN pip install flask mysql-connector-python
 
