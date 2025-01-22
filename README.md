@@ -55,7 +55,7 @@ How to setup -
 
 3- create image inside the minikube environment
 
-4- apploy the deployment and services
+4- apply the deployment and services
 
 5- login to MySQL create table in counter_db database
 
